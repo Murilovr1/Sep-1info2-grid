@@ -2,7 +2,7 @@ body {
     font-family: "Inclusive Sans", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #0D0D0D;
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    background-color: #333;
+    background-color: #D90404;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -26,9 +26,10 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
 .grid-item {
@@ -47,7 +48,7 @@ body {
 
 .grid-item p {
     font-size: 16px;
-    color: #666;
+    color: #595959;
 }
 
 .imagem {
@@ -63,7 +64,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #D90404;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -75,21 +76,37 @@ body {
 }
 
 a {
-    color: #007BFF;
+    color: #D90404;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #595959;
 }
 
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
+.grid-container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3; 
+}
 
-    .grid-item {
-        padding: 10px;
-    }
+.grid-item-bottom {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item-bottom h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.grid-item-bottom p {
+    font-size: 16px;
+    color: #666;
 }
