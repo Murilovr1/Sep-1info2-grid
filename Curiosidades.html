@@ -7,91 +7,172 @@
     <link rel="stylesheet" href="styles.css">
     <title>Página de Blog</title>
     <style>
+        body,
+        h1,
+        p,
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0D0D0D;
+            color: #333;
+            line-height: 1.6;
+            transition: background-color 0.3s;
+        }
+
         .header {
-            background-color: #333;
+            background-color: #D90404;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            background-color: #D90404;
         }
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat (auto-fit, minmax (300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 20px;
             padding: 20px;
+            justify-content: center;
         }
 
         .grid-item {
-
+            background-color: #fff;
             border: 1px solid #ddd;
-            padding: 1rem;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        a {
+            color: #D90404;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #595959;
+            text-decoration: underline;
         }
 
         .footer {
-            background-color: #333;
+            background-color: #D90404;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem 0;
         }
     </style>
 </head>
 
 <body>
     <header class="header">
-        <h1>Meu Blog</h1>
+        <h1>Curiosidades</h1>
     </header>
     <div class="grid-container">
-        <h1>Curiosidades</h1>
+        <img src="download.jpeg" alt="Curiosidades">
         <div class="grid-item">
             <p>
-                Em 1939, o físico alemão Albert Einstein escreveu uma carta para o presidente dos Estados Unidos, Franklin Roosevelt, dizendo que era possível a construção da bomba atômica. Einstein temia que a tecnologia nuclear fosse rapidamente alcançada pelo ditador nazista Adolf Hitler, na Alemanha. O alerta deu início ao Projeto Manhattan, que previa a fabricação da bomba pelos Estados Unidos. Depois que as cidades de Hiroshima e Nagasaki foram bombardeadas, Albert Einstein viveu atormentado com o poder de destruição que ele ajudou a criar.
+                Em 1939, o físico alemão Albert Einstein escreveu uma carta para o presidente dos Estados Unidos,
+                Franklin Roosevelt, dizendo que era possível a construção da bomba atômica. Einstein temia que a
+                tecnologia nuclear fosse rapidamente alcançada pelo ditador nazista Adolf Hitler, na Alemanha. O alerta
+                deu início ao Projeto Manhattan, que previa a fabricação da bomba pelos Estados Unidos. Depois que as
+                cidades de Hiroshima e Nagasaki foram bombardeadas, Albert Einstein viveu atormentado com o poder de
+                destruição que ele ajudou a criar.
             </p>
         </div>
         <div class="grid-item">
             <p>
-                O primeiro teste nuclear bem-sucedido foi realizado em 16 de julho de 1945. Os cientistas, chefiados por Robert Oppenheimer, se reuniram no laboratório de Los Alamos, no Estado do Novo México, e assistiram à explosão no deserto de Alamogordo.
+                O primeiro teste nuclear bem-sucedido foi realizado em 16 de julho de 1945. Os cientistas, chefiados por
+                Robert Oppenheimer, se reuniram no laboratório de Los Alamos, no Estado do Novo México, e assistiram à
+                explosão no deserto de Alamogordo.
             </p>
         </div>
         <div class="grid-item">
             <p>
-                No dia 6 de agosto de 1945, a cidade japonesa de Hiroshima foi a primeira vítima da guerra nuclear. O piloto Paul Tibbets, no comando de um avião B-29, batizado de Enola Gay em homenagem à mãe, recebeu ordens dos Estados Unidos de detonar a primeira bomba atômica. O número de mortos e feridos chegou a cem mil.
+                No dia 6 de agosto de 1945, a cidade japonesa de Hiroshima foi a primeira vítima da guerra nuclear. O
+                piloto Paul Tibbets, no comando de um avião B-29, batizado de Enola Gay em homenagem à mãe, recebeu
+                ordens dos Estados Unidos de detonar a primeira bomba atômica. O número de mortos e feridos chegou a cem
+                mil.
             </p>
         </div>
         <div class="grid-item">
             <p>
-                A bomba tinha o apelido “Little Boy” (“Garotinho”). Carregava 60 quilos de urânio 235 e tinha o poder destrutivo de 13 mil toneladas de explosivo.
+                A bomba tinha o apelido “Little Boy” (“Garotinho”). Carregava 60 quilos de urânio 235 e tinha o poder
+                destrutivo de 13 mil toneladas de explosivo.
 
             </p>
             <p>
-                Ela não chegou a tocar o chão. Explodiu a 617 metros do solo. A temperatura chegou a 5,5 milhões de graus centígrados no centro da cidade. Tudo o que existia num raio de 500 metros do centro foi incinerado, e quase todas as pessoas que estavam a um raio de 800 metros morreram.
+                Ela não chegou a tocar o chão. Explodiu a 617 metros do solo. A temperatura chegou a 5,5 milhões de
+                graus centígrados no centro da cidade. Tudo o que existia num raio de 500 metros do centro foi
+                incinerado, e quase todas as pessoas que estavam a um raio de 800 metros morreram.
             </p>
             <p>
-                A explosão provocou queimaduras profundas, esfoliação da pele e cegueira. Os que sobreviveram ao ataque acabaram morrendo por causa dos efeitos da radiação liberada pela bomba. Entre as reações desencadeadas pelas substâncias radioativas estão a queda de cabelos e câncer.
+                A explosão provocou queimaduras profundas, esfoliação da pele e cegueira. Os que sobreviveram ao ataque
+                acabaram morrendo por causa dos efeitos da radiação liberada pela bomba. Entre as reações desencadeadas
+                pelas substâncias radioativas estão a queda de cabelos e câncer.
             </p>
         </div>
         <div class="grid-item">
             <p>
-                O Museu Memorial da Paz de Hiroshima fica a 150 metros do local onde a bomba caiu, no edifício mais próximo do epicentro que manteve a estrutura de pé. É nesse museu que fica o Relógio da Paz, inaugurado em 2001, que mostra há quanto tempo o mundo está sem ataques nucleares e há quanto tempo está livre de testes nucleares. A contagem dos testes nucleares já foi recomeçada 12 vezes, duas por causa de testes norte-coreanos, e as outras dez por testes norte-americanos — alguns em conjunto com a Inglaterra. Só um presidente dos Estados Unidos visitou o museu, Jimmy Carter, depois que deixou a Casa Branca.
+                O Museu Memorial da Paz de Hiroshima fica a 150 metros do local onde a bomba caiu, no edifício mais
+                próximo do epicentro que manteve a estrutura de pé. É nesse museu que fica o Relógio da Paz, inaugurado
+                em 2001, que mostra há quanto tempo o mundo está sem ataques nucleares e há quanto tempo está livre de
+                testes nucleares. A contagem dos testes nucleares já foi recomeçada 12 vezes, duas por causa de testes
+                norte-coreanos, e as outras dez por testes norte-americanos — alguns em conjunto com a Inglaterra. Só um
+                presidente dos Estados Unidos visitou o museu, Jimmy Carter, depois que deixou a Casa Branca.
             </p>
         </div>
         <div class="grid-item">
             <p>
-                A segunda bomba, denominada “Fatman” (“Homem Gordo”), foi lançada em Nagasaki em 9 de agosto, três dias depois da explosão de Hiroshima. Quarenta mil pessoas morreram na hora e outros quarenta mil japoneses ficaram feridos. Inicialmente, o alvo era a cidade de Kokura. Como no dia o lugar estava coberto de nuvens, os norte-americanos resolveram jogá-la em Nagasaki.
+                A segunda bomba, denominada “Fatman” (“Homem Gordo”), foi lançada em Nagasaki em 9 de agosto, três dias
+                depois da explosão de Hiroshima. Quarenta mil pessoas morreram na hora e outros quarenta mil japoneses
+                ficaram feridos. Inicialmente, o alvo era a cidade de Kokura. Como no dia o lugar estava coberto de
+                nuvens, os norte-americanos resolveram jogá-la em Nagasaki.
 
             </p>
             <p>
-                A explosão da bomba atômica sobre as cidades de Hiroshima e Nagasaki é um dos marcos simbólicos do início da Guerra Fria. O “conflito sem confronto”, que começou depois da Segunda Guerra Mundial, foi travado entre os Estados Unidos, capitalista, e a União Soviética, comunista. Os dois países disputavam a hegemonia do mundo.
+                A explosão da bomba atômica sobre as cidades de <a
+                    href="Historia/bombardeiros/bombardeiros.html">Hiroshima e Nagasaki</a> é um dos marcos simbólicos
+                do
+                início da Guerra Fria. O “conflito sem confronto”, que começou depois da Segunda Guerra Mundial, foi
+                travado entre os Estados Unidos, capitalista, e a União Soviética, comunista. Os dois países disputavam
+                a hegemonia do mundo.
             </p>
         </div>
         <div class="grid-item">
             <p>
-                O japonês Tsutomu Yamaguchi, o único sobrevivente das duas bombas atômicas reconhecido pelo governo do Japão, morreu no dia 4 de janeiro de 2010, aos 93 anos, vítima de um câncer no estômago. Em 6 de agosto de 1945, ele estava em Hiroshima a negócios, quando a cidade foi bombardeada. Apesar de queimaduras severas, Yamaguchi conseguiu retornar à sua casa, na cidade de Nagasaki. Lá, sobreviveu mais uma vez a um ataque atômico
+                O japonês Tsutomu Yamaguchi, o único sobrevivente das duas bombas atômicas reconhecido pelo governo do
+                Japão, morreu no dia 4 de janeiro de 2010, aos 93 anos, vítima de um câncer no estômago. Em 6 de agosto
+                de 1945, ele estava em Hiroshima a negócios, quando a cidade foi bombardeada. Apesar de queimaduras
+                severas, Yamaguchi conseguiu retornar à sua casa, na cidade de Nagasaki. Lá, sobreviveu mais uma vez a
+                um ataque atômico
             </p>
         </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2023 Meu Blog. Todos os direitos reservados.</p>
+        <p>&copy; 2023 SEPE. Todos os direitos reservados.</p>
         <p>Manuela Luchtenberg Silva.</p>
     </footer>
 
