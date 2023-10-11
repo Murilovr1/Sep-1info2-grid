@@ -4,13 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" type="imagem/icon"
         href="https://i.pinimg.com/564x/48/d8/27/48d827b1a834e5b7b72a530db0fc4576.jpg">
-        
-        <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
     <title>Bombas Termo-Nucleares</title>
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".carousel");
+        const slides = document.querySelectorAll(".carousel-slide");
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const offset = currentSlide * -300; 
+            carousel.style.transform = `translateX(${offset}px)`;
+        }
+
+        setInterval(nextSlide, 4000);
+
+        updateCarousel();
+    });
+</script>
 
 <body>
     <header class="header">
@@ -38,10 +62,25 @@
             </article>
         </a>
     </main>
-    <div id="principal">
-        <section id="Propaganda-principal">
-        </section>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide active">
+                <img src="imagens/bomba1.jpg" alt="Imagem 1" width="300" height="200">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/bomba2.jpg" alt="Imagem 2" width="300" height="200">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/bomba3.jpg" alt="Imagem 3" width="300" height="200">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/bomba4.webp" alt="Imagem 4" width="300" height="200">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/bomba5.webp" alt="Imagem 5" width="300" height="200">
+            </div>
         </div>
+    </div>
     <footer class="footer">
         <p>&copy; 2023 Bombas Atômicas. Todos os direitos reservados.</p>
         <p>Murilo Vinicius Rodrigues Garcia e 1info2.</p>

@@ -53,38 +53,23 @@ a:hover {
     text-decoration: underline;
 }
 
-
-@keyframes propaganda {
-    0% {
-        background-image: url("imagens/bomba1.jpg");
-    }
-
-    25% {
-        background-image: url("imagens/bomba2.jpg");
-    }
-
-    50% {
-        background-image: url("imagens/bomba3.jpg");
-    }
-
-    75% {
-        background-image: url("imagens/bomba4.webp");
-    }
-
-    100% {
-        background-image: url("imagens/bomba5.webp");
-    }
+.carousel-container {
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid black;
 }
 
-#Propaganda-principal {
-    height: 260px;
-    width: 450px;
-    box-shadow:
-        -0.2em 0 0.4em rgb(0, 0, 0)
-        2px 3px rgb(153, 153, 153);
-    background-size: 540px;
-    background-repeat: repeat;
-    animation: propaganda 15s infinite alternate;
-    margin-left: 460px;
-    margin-top: 60px;
+.carousel {
+    display: flex;
+    transition: transform 1s;
+}
+
+.carousel-slide {
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
 }
