@@ -1,8 +1,8 @@
-body {
+/*body {
     font-family: "Inclusive Sans", Arial, sans-serif;
     background-color: #0D0D0D;
 }
-
+*/
 .header {
     background-color: #D90404;
     color: #fff;
@@ -10,6 +10,13 @@ body {
     padding: 1rem;
 }
 
+:root {
+    --font: 'Bricolage Grotesque', sans-serif;
+    --font2: 'Kanit', sans-serif;
+    --nav: rgb(173, 39, 39);
+    --navLat: black;
+  }
+/*
 .grid-container {
     display: grid;
     grid-template-columns: repeat (auto-fit, minmax (300px, 1fr));
@@ -24,6 +31,7 @@ body {
     border-radius: 10px;
     padding: 1rem;
 }
+*/
 
 .footer {
     background-color: #D90404;
@@ -31,7 +39,7 @@ body {
     text-align: center;
     padding: 1rem;
 }
-
+/*
 h2 {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -59,6 +67,57 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
+*/
+
+.containerIndex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin-left: 10px;
+    max-width: 100vh;
+    margin: auto;
+    color: var(--nav);
+  }
+
+  .imgIndex {
+    min-width: 40vh;
+    max-width: 40vh;
+    min-height: 30vh;
+    max-height: 30vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid var(--nav);
+    border-top: 20px solid var(--nav);
+  }
+  
+  
+  
+  .griditem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .griditem > h1{
+    align-self: center;
+  }
+  
+  .texto{
+    text-align: center;
+    color: var(--navLat);
+    border: none;
+  }
+
+  .textoCentral {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
 
 .carousel-container {
     width: 300px;

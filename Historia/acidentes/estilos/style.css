@@ -52,8 +52,7 @@ nav {
 
 main {
   background: url("bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 92vh;
+  background-size: cover; 
 }
 
 .nav-list {
@@ -89,7 +88,6 @@ main {
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    height: 8vh;
     background: var(--navLat);
   }
 
@@ -103,7 +101,7 @@ main {
     top: 8vh;
     right: 0;
     width: 50%;
-    height: 92vh;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -156,8 +154,7 @@ main {
 
 .container {
   max-width: 900px;
-  min-height: 350vh;
-  margin: 0 auto;
+  margin: 20px auto 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 4px 8px black;
